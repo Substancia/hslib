@@ -45,9 +45,6 @@ Route::get('/newsread/{id}', 'CreateController@newsread');
 Route::post('/newssearch', 'CreateController@newssearch');
 
 Auth::routes();
-Route::get('/register', function() {
-	return 'Nop';
-});
 
 Route::get('/admin', 'HomeController@index')->name('home');
 Route::get('/panel', function() {
